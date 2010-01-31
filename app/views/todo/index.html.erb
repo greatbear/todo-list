@@ -40,6 +40,8 @@
         </th>
         <th>Description
         </th>
+		<th>Completed
+        </th>
     </tr>
 	<% for task in @tasks -%>
     <tr>
@@ -48,6 +50,8 @@
         <td><%= task.name %>
         </td>
         <td><%= task.description %>
+        </td>
+		<td><%= task.completed %>
         </td>
     </tr>
 	<% end %>
