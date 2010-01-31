@@ -1,5 +1,7 @@
 class TodoController < ApplicationController
-def list
-  
-end
+
+  def index
+  end
+  def list
+  end
 end
