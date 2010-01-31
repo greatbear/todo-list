@@ -41,27 +41,22 @@
         <th>Description
         </th>
     </tr>
+	<% for task in @tasks -%>
     <tr>
-        <td>1
+        <td><%= task.id %>
         </td>
-        <td>ten
+        <td><%= task.name %>
         </td>
-        <td>mota
+        <td><%= task.description %>
         </td>
     </tr>
+	<% end %>
+
+
+
 </table>
 
 			
-			<% for task in @tasks -%>
-			<div class="entry" >
-			<img src="<%= task.name %>" alt="" />
-			<h3><%= h(task.name) %></h3>
-			<%= task.description %>
-			<span class="price" ><%= task.description %></span>
-			</div>
-			<% end %>
-
-
 		</div><!-- end content -->
 		</div><!-- end inner -->
 	</div><!-- end outer -->
