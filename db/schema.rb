@@ -11,14 +11,10 @@
 
 ActiveRecord::Schema.define(:version => 1) do
 
-  create_table "task", :force => true do |t|
-    t.string "name",        :limit => 50
-    t.string "description"
-  end
-
   create_table "tasks", :force => true do |t|
-    t.string "name"
-    t.string "description"
+    t.string  "name"
+    t.string  "description"
+    t.boolean "completed"
   end
 
 end

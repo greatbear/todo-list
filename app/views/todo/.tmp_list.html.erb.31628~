@@ -29,37 +29,9 @@
 
    		</div>
    		<div id="content"><h2>ToDo App</h2>
-<p>All current to do items.
+<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Curabitur elit nibh, venenatis a, ornare id, elementum et, sem. Aliquam adipiscing faucibus risus. Nulla at libero. Vivamus vitae lorem id sem pellentesque euismod. Quisque libero. Etiam fermentum mattis eros. Donec faucibus elit sed enim. Fusce pulvinar tincidunt erat. Phasellus elit. In luctus. Aliquam erat volutpat. Nullam imperdiet tellus vitae magna. Proin ut purus. Cras condimentum sagittis eros. Morbi laoreet nunc eget erat. Duis varius.
 </p>	
-			
-<table width="200" border="1">
-    <tr>
-        <th>No.
-        </th>
-        <th>Name
-        </th>
-        <th>Description
-        </th>
-    </tr>
-    <tr>
-        <td>1
-        </td>
-        <td>ten
-        </td>
-        <td>mota
-        </td>
-    </tr>
-</table>
 
-			
-			<% for task in @tasks -%>
-			<div class="entry" >
-			<img src="<%= task.name %>" alt="" />
-			<h3><%= h(task.name) %></h3>
-			<%= task.description %>
-			<span class="price" ><%= task.description %></span>
-			</div>
-			<% end %>
 
 
 		</div><!-- end content -->
