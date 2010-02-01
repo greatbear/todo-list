@@ -12,9 +12,8 @@
 ActiveRecord::Schema.define(:version => 1) do
 
   create_table "tasks", :force => true do |t|
-    t.string  "name"
-    t.string  "description"
-    t.boolean "completed"
+    t.string "name"
+    t.string "description"
   end
 
 end

@@ -5,4 +5,8 @@ class TodoController < ApplicationController
   end
   def list
   end
+  # add new item
+  def add
+  end
+
 end

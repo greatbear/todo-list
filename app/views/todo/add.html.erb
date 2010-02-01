@@ -27,38 +27,13 @@
    </ul>
  </div> 
 
-   		</div>
-   		<div id="content"><h2>ToDo App</h2>
-<p>All current to do items.
-</p>	
+</div>
+<div id="content"><h2>ToDo App</h2>
+<p>Add new item.</p>	
 			
-<table width="200" border="1">
-    <tr>
-        <th>No.
-        </th>
-        <th>Name
-        </th>
-        <th>Description
-        </th>
-		<th>Delete
-        </th>
-    </tr>
-	<% for task in @tasks -%>
-    <tr>
-        <td><%= task.id %>
-        </td>
-        <td><%= task.name %>
-        </td>
-        <td><%= task.description %>
-        </td>
-		<td>
-			<button type="button">Delete</button>
-        </td>
-    </tr>
-	<% end %>
-</table>
+
 <br /><br />
-<div align="bottom" ><a href="/todo/add">Add new item</a></div>
+<div align="bottom" ><button type="button">OK</button> <button type="button">Cancel</button></div>
 
 			
 		</div><!-- end content -->

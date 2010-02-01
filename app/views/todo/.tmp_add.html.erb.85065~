@@ -58,7 +58,7 @@
 	<% end %>
 </table>
 <br /><br />
-<div align="bottom" ><a href="/todo/add">Add new item</a></div>
+<div align="bottom" ><button type="button">Add new item</button></div>
 
 			
 		</div><!-- end content -->

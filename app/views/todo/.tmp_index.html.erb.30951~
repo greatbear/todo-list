@@ -56,9 +56,11 @@
         </td>
     </tr>
 	<% end %>
+
+<div align="center"><button type="button">Add new item</button></div>
+
+
 </table>
-<br /><br />
-<div align="bottom" ><a href="/todo/add">Add new item</a></div>
 
 			
 		</div><!-- end content -->
