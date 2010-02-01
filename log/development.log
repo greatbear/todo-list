@@ -12208,3 +12208,442 @@ ActionController::RoutingError (No route matches "/stylesheets/body.jpg" with {:
     script/server:3
 
 Rendering E:/ebook/ruby/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/templates/rescues/layout.erb (not_found)
+
+
+Processing TodoController#index (for 127.0.0.1 at 2010-02-02 01:37:39) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlNWY3NmM1MDIyODUyNjFlMjg0NGUxNTIwZDNjMTlj%0AODQiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7AAY6CkB1c2VkewA%3D--abbe5bdcff4e39da26a5ae67436721e21a3d3e25
+  Parameters: {"action"=>"index", "controller"=>"todo"}
+  [4;36;1mSQL (0.000000)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mTask Load (0.000000)[0m   [0mSELECT * FROM `tasks` ORDER BY name[0m
+Rendering todo/index
+  [4;36;1mTask Columns (0.000000)[0m   [0;1mSHOW FIELDS FROM `tasks`[0m
+Completed in 0.04700 (21 reqs/sec) | Rendering: 0.03100 (65%) | DB: 0.00000 (0%) | 200 OK [http://localhost/todo]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-02-02 01:37:39) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlNWY3NmM1MDIyODUyNjFlMjg0NGUxNTIwZDNjMTlj%0AODQiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7AAY6CkB1c2VkewA%3D--abbe5bdcff4e39da26a5ae67436721e21a3d3e25
+  Parameters: {}
+
+
+ActionController::RoutingError (No route matches "/stylesheets/body.jpg" with {:method=>:get}):
+    E:/ebook/ruby/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/routing.rb:1441:in `recognize_path'
+    E:/ebook/ruby/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/routing.rb:1424:in `recognize'
+    E:/ebook/ruby/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:170:in `handle_request'
+    E:/ebook/ruby/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:115:in `dispatch'
+    E:/ebook/ruby/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:126:in `dispatch_cgi'
+    E:/ebook/ruby/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:9:in `dispatch'
+    E:/ebook/ruby/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.2-x86-mswin32/bin/../lib/mongrel/rails.rb:76:in `process'
+    E:/ebook/ruby/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.2-x86-mswin32/bin/../lib/mongrel/rails.rb:74:in `synchronize'
+    E:/ebook/ruby/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.2-x86-mswin32/bin/../lib/mongrel/rails.rb:74:in `process'
+    E:/ebook/ruby/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.2-x86-mswin32/lib/mongrel.rb:159:in `process_client'
+    E:/ebook/ruby/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.2-x86-mswin32/lib/mongrel.rb:158:in `each'
+    E:/ebook/ruby/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.2-x86-mswin32/lib/mongrel.rb:158:in `process_client'
+    E:/ebook/ruby/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.2-x86-mswin32/lib/mongrel.rb:285:in `run'
+    E:/ebook/ruby/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.2-x86-mswin32/lib/mongrel.rb:285:in `initialize'
+    E:/ebook/ruby/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.2-x86-mswin32/lib/mongrel.rb:285:in `new'
+    E:/ebook/ruby/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.2-x86-mswin32/lib/mongrel.rb:285:in `run'
+    E:/ebook/ruby/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.2-x86-mswin32/lib/mongrel.rb:268:in `initialize'
+    E:/ebook/ruby/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.2-x86-mswin32/lib/mongrel.rb:268:in `new'
+    E:/ebook/ruby/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.2-x86-mswin32/lib/mongrel.rb:268:in `run'
+    E:/ebook/ruby/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.2-x86-mswin32/lib/mongrel/configurator.rb:282:in `run'
+    E:/ebook/ruby/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.2-x86-mswin32/lib/mongrel/configurator.rb:281:in `each'
+    E:/ebook/ruby/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.2-x86-mswin32/lib/mongrel/configurator.rb:281:in `run'
+    E:/ebook/ruby/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.2-x86-mswin32/bin/mongrel_rails:128:in `run'
+    E:/ebook/ruby/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.2-x86-mswin32/lib/mongrel/command.rb:212:in `run'
+    E:/ebook/ruby/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.2-x86-mswin32/bin/mongrel_rails:281
+    E:/ebook/ruby/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:489:in `load'
+    E:/ebook/ruby/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:489:in `load'
+    E:/ebook/ruby/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    E:/ebook/ruby/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:489:in `load'
+    E:/ebook/ruby/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/rails-2.0.2/lib/commands/servers/mongrel.rb:64
+    E:/ebook/ruby/InstantRails-2.0-win/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    E:/ebook/ruby/InstantRails-2.0-win/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    E:/ebook/ruby/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:496:in `require'
+    E:/ebook/ruby/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    E:/ebook/ruby/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:496:in `require'
+    E:/ebook/ruby/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/rails-2.0.2/lib/commands/server.rb:39
+    E:/ebook/ruby/InstantRails-2.0-win/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    E:/ebook/ruby/InstantRails-2.0-win/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    script/server:3
+
+Rendering E:/ebook/ruby/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/templates/rescues/layout.erb (not_found)
+
+
+Processing TodoController#add (for 127.0.0.1 at 2010-02-02 01:37:42) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlNWY3NmM1MDIyODUyNjFlMjg0NGUxNTIwZDNjMTlj%0AODQiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7AAY6CkB1c2VkewA%3D--abbe5bdcff4e39da26a5ae67436721e21a3d3e25
+  Parameters: {"action"=>"add", "controller"=>"todo"}
+Rendering todo/add
+Completed in 0.00010 (10000 reqs/sec) | Rendering: 0.00000 (0%) | DB: 0.00000 (0%) | 200 OK [http://localhost/todo/add]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-02-02 01:37:42) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlNWY3NmM1MDIyODUyNjFlMjg0NGUxNTIwZDNjMTlj%0AODQiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7AAY6CkB1c2VkewA%3D--abbe5bdcff4e39da26a5ae67436721e21a3d3e25
+  Parameters: {}
+
+
+ActionController::RoutingError (No route matches "/stylesheets/body.jpg" with {:method=>:get}):
+    E:/ebook/ruby/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/routing.rb:1441:in `recognize_path'
+    E:/ebook/ruby/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/routing.rb:1424:in `recognize'
+    E:/ebook/ruby/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:170:in `handle_request'
+    E:/ebook/ruby/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:115:in `dispatch'
+    E:/ebook/ruby/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:126:in `dispatch_cgi'
+    E:/ebook/ruby/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:9:in `dispatch'
+    E:/ebook/ruby/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.2-x86-mswin32/bin/../lib/mongrel/rails.rb:76:in `process'
+    E:/ebook/ruby/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.2-x86-mswin32/bin/../lib/mongrel/rails.rb:74:in `synchronize'
+    E:/ebook/ruby/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.2-x86-mswin32/bin/../lib/mongrel/rails.rb:74:in `process'
+    E:/ebook/ruby/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.2-x86-mswin32/lib/mongrel.rb:159:in `process_client'
+    E:/ebook/ruby/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.2-x86-mswin32/lib/mongrel.rb:158:in `each'
+    E:/ebook/ruby/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.2-x86-mswin32/lib/mongrel.rb:158:in `process_client'
+    E:/ebook/ruby/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.2-x86-mswin32/lib/mongrel.rb:285:in `run'
+    E:/ebook/ruby/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.2-x86-mswin32/lib/mongrel.rb:285:in `initialize'
+    E:/ebook/ruby/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.2-x86-mswin32/lib/mongrel.rb:285:in `new'
+    E:/ebook/ruby/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.2-x86-mswin32/lib/mongrel.rb:285:in `run'
+    E:/ebook/ruby/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.2-x86-mswin32/lib/mongrel.rb:268:in `initialize'
+    E:/ebook/ruby/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.2-x86-mswin32/lib/mongrel.rb:268:in `new'
+    E:/ebook/ruby/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.2-x86-mswin32/lib/mongrel.rb:268:in `run'
+    E:/ebook/ruby/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.2-x86-mswin32/lib/mongrel/configurator.rb:282:in `run'
+    E:/ebook/ruby/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.2-x86-mswin32/lib/mongrel/configurator.rb:281:in `each'
+    E:/ebook/ruby/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.2-x86-mswin32/lib/mongrel/configurator.rb:281:in `run'
+    E:/ebook/ruby/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.2-x86-mswin32/bin/mongrel_rails:128:in `run'
+    E:/ebook/ruby/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.2-x86-mswin32/lib/mongrel/command.rb:212:in `run'
+    E:/ebook/ruby/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.2-x86-mswin32/bin/mongrel_rails:281
+    E:/ebook/ruby/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:489:in `load'
+    E:/ebook/ruby/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:489:in `load'
+    E:/ebook/ruby/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    E:/ebook/ruby/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:489:in `load'
+    E:/ebook/ruby/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/rails-2.0.2/lib/commands/servers/mongrel.rb:64
+    E:/ebook/ruby/InstantRails-2.0-win/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    E:/ebook/ruby/InstantRails-2.0-win/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    E:/ebook/ruby/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:496:in `require'
+    E:/ebook/ruby/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    E:/ebook/ruby/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:496:in `require'
+    E:/ebook/ruby/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/rails-2.0.2/lib/commands/server.rb:39
+    E:/ebook/ruby/InstantRails-2.0-win/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    E:/ebook/ruby/InstantRails-2.0-win/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    script/server:3
+
+Rendering E:/ebook/ruby/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/templates/rescues/layout.erb (not_found)
+
+
+Processing TodoController#addItem (for 127.0.0.1 at 2010-02-02 01:37:47) [POST]
+  Session ID: BAh7BzoMY3NyZl9pZCIlNWY3NmM1MDIyODUyNjFlMjg0NGUxNTIwZDNjMTlj%0AODQiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7AAY6CkB1c2VkewA%3D--abbe5bdcff4e39da26a5ae67436721e21a3d3e25
+  Parameters: {"name"=>"", "action"=>"addItem", "controller"=>"todo", "des"=>""}
+  [4;35;1mTask Columns (0.016000)[0m   [0mSHOW FIELDS FROM `tasks`[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mBEGIN[0m
+  [4;35;1mTask Create (0.000000)[0m   [0mINSERT INTO `tasks` (`name`, `description`) VALUES('', '')[0m
+  [4;36;1mSQL (0.047000)[0m   [0;1mCOMMIT[0m
+Redirected to http://localhost:3000/todo
+Completed in 0.07800 (12 reqs/sec) | DB: 0.06300 (80%) | 302 Found [http://localhost/todo/addItem]
+
+
+Processing TodoController#index (for 127.0.0.1 at 2010-02-02 01:37:47) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlNWY3NmM1MDIyODUyNjFlMjg0NGUxNTIwZDNjMTlj%0AODQiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7AAY6CkB1c2VkewA%3D--abbe5bdcff4e39da26a5ae67436721e21a3d3e25
+  Parameters: {"action"=>"index", "controller"=>"todo"}
+  [4;35;1mTask Load (0.000000)[0m   [0mSELECT * FROM `tasks` ORDER BY name[0m
+Rendering todo/index
+  [4;36;1mTask Columns (0.000000)[0m   [0;1mSHOW FIELDS FROM `tasks`[0m
+Completed in 0.03100 (32 reqs/sec) | Rendering: 0.00000 (0%) | DB: 0.00000 (0%) | 200 OK [http://localhost/todo]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-02-02 01:37:47) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlNWY3NmM1MDIyODUyNjFlMjg0NGUxNTIwZDNjMTlj%0AODQiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7AAY6CkB1c2VkewA%3D--abbe5bdcff4e39da26a5ae67436721e21a3d3e25
+  Parameters: {}
+
+
+ActionController::RoutingError (No route matches "/stylesheets/body.jpg" with {:method=>:get}):
+    E:/ebook/ruby/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/routing.rb:1441:in `recognize_path'
+    E:/ebook/ruby/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/routing.rb:1424:in `recognize'
+    E:/ebook/ruby/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:170:in `handle_request'
+    E:/ebook/ruby/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:115:in `dispatch'
+    E:/ebook/ruby/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:126:in `dispatch_cgi'
+    E:/ebook/ruby/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:9:in `dispatch'
+    E:/ebook/ruby/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.2-x86-mswin32/bin/../lib/mongrel/rails.rb:76:in `process'
+    E:/ebook/ruby/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.2-x86-mswin32/bin/../lib/mongrel/rails.rb:74:in `synchronize'
+    E:/ebook/ruby/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.2-x86-mswin32/bin/../lib/mongrel/rails.rb:74:in `process'
+    E:/ebook/ruby/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.2-x86-mswin32/lib/mongrel.rb:159:in `process_client'
+    E:/ebook/ruby/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.2-x86-mswin32/lib/mongrel.rb:158:in `each'
+    E:/ebook/ruby/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.2-x86-mswin32/lib/mongrel.rb:158:in `process_client'
+    E:/ebook/ruby/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.2-x86-mswin32/lib/mongrel.rb:285:in `run'
+    E:/ebook/ruby/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.2-x86-mswin32/lib/mongrel.rb:285:in `initialize'
+    E:/ebook/ruby/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.2-x86-mswin32/lib/mongrel.rb:285:in `new'
+    E:/ebook/ruby/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.2-x86-mswin32/lib/mongrel.rb:285:in `run'
+    E:/ebook/ruby/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.2-x86-mswin32/lib/mongrel.rb:268:in `initialize'
+    E:/ebook/ruby/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.2-x86-mswin32/lib/mongrel.rb:268:in `new'
+    E:/ebook/ruby/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.2-x86-mswin32/lib/mongrel.rb:268:in `run'
+    E:/ebook/ruby/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.2-x86-mswin32/lib/mongrel/configurator.rb:282:in `run'
+    E:/ebook/ruby/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.2-x86-mswin32/lib/mongrel/configurator.rb:281:in `each'
+    E:/ebook/ruby/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.2-x86-mswin32/lib/mongrel/configurator.rb:281:in `run'
+    E:/ebook/ruby/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.2-x86-mswin32/bin/mongrel_rails:128:in `run'
+    E:/ebook/ruby/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.2-x86-mswin32/lib/mongrel/command.rb:212:in `run'
+    E:/ebook/ruby/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.2-x86-mswin32/bin/mongrel_rails:281
+    E:/ebook/ruby/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:489:in `load'
+    E:/ebook/ruby/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:489:in `load'
+    E:/ebook/ruby/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    E:/ebook/ruby/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:489:in `load'
+    E:/ebook/ruby/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/rails-2.0.2/lib/commands/servers/mongrel.rb:64
+    E:/ebook/ruby/InstantRails-2.0-win/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    E:/ebook/ruby/InstantRails-2.0-win/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    E:/ebook/ruby/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:496:in `require'
+    E:/ebook/ruby/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    E:/ebook/ruby/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:496:in `require'
+    E:/ebook/ruby/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/rails-2.0.2/lib/commands/server.rb:39
+    E:/ebook/ruby/InstantRails-2.0-win/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    E:/ebook/ruby/InstantRails-2.0-win/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    script/server:3
+
+Rendering E:/ebook/ruby/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/templates/rescues/layout.erb (not_found)
+
+
+Processing TodoController#add (for 127.0.0.1 at 2010-02-02 01:37:49) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlNWY3NmM1MDIyODUyNjFlMjg0NGUxNTIwZDNjMTlj%0AODQiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7AAY6CkB1c2VkewA%3D--abbe5bdcff4e39da26a5ae67436721e21a3d3e25
+  Parameters: {"action"=>"add", "controller"=>"todo"}
+Rendering todo/add
+Completed in 0.01600 (62 reqs/sec) | Rendering: 0.01600 (100%) | DB: 0.00000 (0%) | 200 OK [http://localhost/todo/add]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-02-02 01:37:49) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlNWY3NmM1MDIyODUyNjFlMjg0NGUxNTIwZDNjMTlj%0AODQiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7AAY6CkB1c2VkewA%3D--abbe5bdcff4e39da26a5ae67436721e21a3d3e25
+  Parameters: {}
+
+
+ActionController::RoutingError (No route matches "/stylesheets/body.jpg" with {:method=>:get}):
+    E:/ebook/ruby/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/routing.rb:1441:in `recognize_path'
+    E:/ebook/ruby/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/routing.rb:1424:in `recognize'
+    E:/ebook/ruby/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:170:in `handle_request'
+    E:/ebook/ruby/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:115:in `dispatch'
+    E:/ebook/ruby/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:126:in `dispatch_cgi'
+    E:/ebook/ruby/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:9:in `dispatch'
+    E:/ebook/ruby/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.2-x86-mswin32/bin/../lib/mongrel/rails.rb:76:in `process'
+    E:/ebook/ruby/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.2-x86-mswin32/bin/../lib/mongrel/rails.rb:74:in `synchronize'
+    E:/ebook/ruby/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.2-x86-mswin32/bin/../lib/mongrel/rails.rb:74:in `process'
+    E:/ebook/ruby/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.2-x86-mswin32/lib/mongrel.rb:159:in `process_client'
+    E:/ebook/ruby/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.2-x86-mswin32/lib/mongrel.rb:158:in `each'
+    E:/ebook/ruby/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.2-x86-mswin32/lib/mongrel.rb:158:in `process_client'
+    E:/ebook/ruby/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.2-x86-mswin32/lib/mongrel.rb:285:in `run'
+    E:/ebook/ruby/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.2-x86-mswin32/lib/mongrel.rb:285:in `initialize'
+    E:/ebook/ruby/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.2-x86-mswin32/lib/mongrel.rb:285:in `new'
+    E:/ebook/ruby/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.2-x86-mswin32/lib/mongrel.rb:285:in `run'
+    E:/ebook/ruby/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.2-x86-mswin32/lib/mongrel.rb:268:in `initialize'
+    E:/ebook/ruby/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.2-x86-mswin32/lib/mongrel.rb:268:in `new'
+    E:/ebook/ruby/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.2-x86-mswin32/lib/mongrel.rb:268:in `run'
+    E:/ebook/ruby/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.2-x86-mswin32/lib/mongrel/configurator.rb:282:in `run'
+    E:/ebook/ruby/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.2-x86-mswin32/lib/mongrel/configurator.rb:281:in `each'
+    E:/ebook/ruby/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.2-x86-mswin32/lib/mongrel/configurator.rb:281:in `run'
+    E:/ebook/ruby/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.2-x86-mswin32/bin/mongrel_rails:128:in `run'
+    E:/ebook/ruby/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.2-x86-mswin32/lib/mongrel/command.rb:212:in `run'
+    E:/ebook/ruby/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.2-x86-mswin32/bin/mongrel_rails:281
+    E:/ebook/ruby/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:489:in `load'
+    E:/ebook/ruby/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:489:in `load'
+    E:/ebook/ruby/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    E:/ebook/ruby/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:489:in `load'
+    E:/ebook/ruby/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/rails-2.0.2/lib/commands/servers/mongrel.rb:64
+    E:/ebook/ruby/InstantRails-2.0-win/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    E:/ebook/ruby/InstantRails-2.0-win/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    E:/ebook/ruby/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:496:in `require'
+    E:/ebook/ruby/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    E:/ebook/ruby/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:496:in `require'
+    E:/ebook/ruby/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/rails-2.0.2/lib/commands/server.rb:39
+    E:/ebook/ruby/InstantRails-2.0-win/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    E:/ebook/ruby/InstantRails-2.0-win/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    script/server:3
+
+Rendering E:/ebook/ruby/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/templates/rescues/layout.erb (not_found)
+
+
+Processing TodoController#index (for 127.0.0.1 at 2010-02-02 01:37:50) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlNWY3NmM1MDIyODUyNjFlMjg0NGUxNTIwZDNjMTlj%0AODQiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7AAY6CkB1c2VkewA%3D--abbe5bdcff4e39da26a5ae67436721e21a3d3e25
+  Parameters: {"action"=>"index", "controller"=>"todo"}
+  [4;35;1mTask Load (0.000000)[0m   [0mSELECT * FROM `tasks` ORDER BY name[0m
+Rendering todo/index
+  [4;36;1mTask Columns (0.016000)[0m   [0;1mSHOW FIELDS FROM `tasks`[0m
+Completed in 0.04700 (21 reqs/sec) | Rendering: 0.00000 (0%) | DB: 0.01600 (34%) | 200 OK [http://localhost/todo]
+
+
+Processing TodoController#index (for 127.0.0.1 at 2010-02-02 01:37:50) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlNWY3NmM1MDIyODUyNjFlMjg0NGUxNTIwZDNjMTlj%0AODQiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7AAY6CkB1c2VkewA%3D--abbe5bdcff4e39da26a5ae67436721e21a3d3e25
+  Parameters: {"action"=>"index", "controller"=>"todo"}
+  [4;35;1mTask Load (0.000000)[0m   [0mSELECT * FROM `tasks` ORDER BY name[0m
+Rendering todo/index
+  [4;36;1mTask Columns (0.015000)[0m   [0;1mSHOW FIELDS FROM `tasks`[0m
+Completed in 0.03100 (32 reqs/sec) | Rendering: 0.00000 (0%) | DB: 0.01500 (48%) | 200 OK [http://localhost/todo]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-02-02 01:37:51) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlNWY3NmM1MDIyODUyNjFlMjg0NGUxNTIwZDNjMTlj%0AODQiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7AAY6CkB1c2VkewA%3D--abbe5bdcff4e39da26a5ae67436721e21a3d3e25
+  Parameters: {}
+
+
+ActionController::RoutingError (No route matches "/stylesheets/body.jpg" with {:method=>:get}):
+    E:/ebook/ruby/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/routing.rb:1441:in `recognize_path'
+    E:/ebook/ruby/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/routing.rb:1424:in `recognize'
+    E:/ebook/ruby/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:170:in `handle_request'
+    E:/ebook/ruby/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:115:in `dispatch'
+    E:/ebook/ruby/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:126:in `dispatch_cgi'
+    E:/ebook/ruby/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:9:in `dispatch'
+    E:/ebook/ruby/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.2-x86-mswin32/bin/../lib/mongrel/rails.rb:76:in `process'
+    E:/ebook/ruby/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.2-x86-mswin32/bin/../lib/mongrel/rails.rb:74:in `synchronize'
+    E:/ebook/ruby/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.2-x86-mswin32/bin/../lib/mongrel/rails.rb:74:in `process'
+    E:/ebook/ruby/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.2-x86-mswin32/lib/mongrel.rb:159:in `process_client'
+    E:/ebook/ruby/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.2-x86-mswin32/lib/mongrel.rb:158:in `each'
+    E:/ebook/ruby/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.2-x86-mswin32/lib/mongrel.rb:158:in `process_client'
+    E:/ebook/ruby/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.2-x86-mswin32/lib/mongrel.rb:285:in `run'
+    E:/ebook/ruby/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.2-x86-mswin32/lib/mongrel.rb:285:in `initialize'
+    E:/ebook/ruby/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.2-x86-mswin32/lib/mongrel.rb:285:in `new'
+    E:/ebook/ruby/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.2-x86-mswin32/lib/mongrel.rb:285:in `run'
+    E:/ebook/ruby/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.2-x86-mswin32/lib/mongrel.rb:268:in `initialize'
+    E:/ebook/ruby/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.2-x86-mswin32/lib/mongrel.rb:268:in `new'
+    E:/ebook/ruby/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.2-x86-mswin32/lib/mongrel.rb:268:in `run'
+    E:/ebook/ruby/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.2-x86-mswin32/lib/mongrel/configurator.rb:282:in `run'
+    E:/ebook/ruby/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.2-x86-mswin32/lib/mongrel/configurator.rb:281:in `each'
+    E:/ebook/ruby/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.2-x86-mswin32/lib/mongrel/configurator.rb:281:in `run'
+    E:/ebook/ruby/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.2-x86-mswin32/bin/mongrel_rails:128:in `run'
+    E:/ebook/ruby/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.2-x86-mswin32/lib/mongrel/command.rb:212:in `run'
+    E:/ebook/ruby/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.2-x86-mswin32/bin/mongrel_rails:281
+    E:/ebook/ruby/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:489:in `load'
+    E:/ebook/ruby/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:489:in `load'
+    E:/ebook/ruby/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    E:/ebook/ruby/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:489:in `load'
+    E:/ebook/ruby/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/rails-2.0.2/lib/commands/servers/mongrel.rb:64
+    E:/ebook/ruby/InstantRails-2.0-win/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    E:/ebook/ruby/InstantRails-2.0-win/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    E:/ebook/ruby/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:496:in `require'
+    E:/ebook/ruby/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    E:/ebook/ruby/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:496:in `require'
+    E:/ebook/ruby/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/rails-2.0.2/lib/commands/server.rb:39
+    E:/ebook/ruby/InstantRails-2.0-win/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    E:/ebook/ruby/InstantRails-2.0-win/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    script/server:3
+
+Rendering E:/ebook/ruby/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/templates/rescues/layout.erb (not_found)
+
+
+Processing TodoController#delete (for 127.0.0.1 at 2010-02-02 01:37:52) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlNWY3NmM1MDIyODUyNjFlMjg0NGUxNTIwZDNjMTlj%0AODQiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7AAY6CkB1c2VkewA%3D--abbe5bdcff4e39da26a5ae67436721e21a3d3e25
+  Parameters: {"action"=>"delete", "id"=>"3", "controller"=>"todo"}
+  [4;35;1mTask Delete all (0.078000)[0m   [0mDELETE FROM `tasks` WHERE (`id` IN ('3')) [0m
+Redirected to http://localhost:3000/todo
+Completed in 0.09400 (10 reqs/sec) | DB: 0.07800 (82%) | 302 Found [http://localhost/todo/delete/3]
+
+
+Processing TodoController#delete (for 127.0.0.1 at 2010-02-02 01:37:52) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlNWY3NmM1MDIyODUyNjFlMjg0NGUxNTIwZDNjMTlj%0AODQiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7AAY6CkB1c2VkewA%3D--abbe5bdcff4e39da26a5ae67436721e21a3d3e25
+  Parameters: {"action"=>"delete", "id"=>"3", "controller"=>"todo"}
+  [4;36;1mTask Delete all (0.000000)[0m   [0;1mDELETE FROM `tasks` WHERE (`id` IN ('3')) [0m
+Redirected to http://localhost:3000/todo
+Completed in 0.01500 (66 reqs/sec) | DB: 0.00000 (0%) | 302 Found [http://localhost/todo/delete/3]
+
+
+Processing TodoController#index (for 127.0.0.1 at 2010-02-02 01:37:53) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlNWY3NmM1MDIyODUyNjFlMjg0NGUxNTIwZDNjMTlj%0AODQiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7AAY6CkB1c2VkewA%3D--abbe5bdcff4e39da26a5ae67436721e21a3d3e25
+  Parameters: {"action"=>"index", "controller"=>"todo"}
+  [4;35;1mTask Load (0.000000)[0m   [0mSELECT * FROM `tasks` ORDER BY name[0m
+Rendering todo/index
+  [4;36;1mTask Columns (0.000000)[0m   [0;1mSHOW FIELDS FROM `tasks`[0m
+Completed in 0.01500 (66 reqs/sec) | Rendering: 0.00000 (0%) | DB: 0.00000 (0%) | 200 OK [http://localhost/todo]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-02-02 01:37:53) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlNWY3NmM1MDIyODUyNjFlMjg0NGUxNTIwZDNjMTlj%0AODQiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7AAY6CkB1c2VkewA%3D--abbe5bdcff4e39da26a5ae67436721e21a3d3e25
+  Parameters: {}
+
+
+ActionController::RoutingError (No route matches "/stylesheets/body.jpg" with {:method=>:get}):
+    E:/ebook/ruby/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/routing.rb:1441:in `recognize_path'
+    E:/ebook/ruby/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/routing.rb:1424:in `recognize'
+    E:/ebook/ruby/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:170:in `handle_request'
+    E:/ebook/ruby/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:115:in `dispatch'
+    E:/ebook/ruby/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:126:in `dispatch_cgi'
+    E:/ebook/ruby/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:9:in `dispatch'
+    E:/ebook/ruby/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.2-x86-mswin32/bin/../lib/mongrel/rails.rb:76:in `process'
+    E:/ebook/ruby/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.2-x86-mswin32/bin/../lib/mongrel/rails.rb:74:in `synchronize'
+    E:/ebook/ruby/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.2-x86-mswin32/bin/../lib/mongrel/rails.rb:74:in `process'
+    E:/ebook/ruby/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.2-x86-mswin32/lib/mongrel.rb:159:in `process_client'
+    E:/ebook/ruby/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.2-x86-mswin32/lib/mongrel.rb:158:in `each'
+    E:/ebook/ruby/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.2-x86-mswin32/lib/mongrel.rb:158:in `process_client'
+    E:/ebook/ruby/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.2-x86-mswin32/lib/mongrel.rb:285:in `run'
+    E:/ebook/ruby/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.2-x86-mswin32/lib/mongrel.rb:285:in `initialize'
+    E:/ebook/ruby/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.2-x86-mswin32/lib/mongrel.rb:285:in `new'
+    E:/ebook/ruby/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.2-x86-mswin32/lib/mongrel.rb:285:in `run'
+    E:/ebook/ruby/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.2-x86-mswin32/lib/mongrel.rb:268:in `initialize'
+    E:/ebook/ruby/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.2-x86-mswin32/lib/mongrel.rb:268:in `new'
+    E:/ebook/ruby/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.2-x86-mswin32/lib/mongrel.rb:268:in `run'
+    E:/ebook/ruby/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.2-x86-mswin32/lib/mongrel/configurator.rb:282:in `run'
+    E:/ebook/ruby/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.2-x86-mswin32/lib/mongrel/configurator.rb:281:in `each'
+    E:/ebook/ruby/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.2-x86-mswin32/lib/mongrel/configurator.rb:281:in `run'
+    E:/ebook/ruby/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.2-x86-mswin32/bin/mongrel_rails:128:in `run'
+    E:/ebook/ruby/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.2-x86-mswin32/lib/mongrel/command.rb:212:in `run'
+    E:/ebook/ruby/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.2-x86-mswin32/bin/mongrel_rails:281
+    E:/ebook/ruby/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:489:in `load'
+    E:/ebook/ruby/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:489:in `load'
+    E:/ebook/ruby/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    E:/ebook/ruby/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:489:in `load'
+    E:/ebook/ruby/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/rails-2.0.2/lib/commands/servers/mongrel.rb:64
+    E:/ebook/ruby/InstantRails-2.0-win/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    E:/ebook/ruby/InstantRails-2.0-win/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    E:/ebook/ruby/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:496:in `require'
+    E:/ebook/ruby/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    E:/ebook/ruby/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:496:in `require'
+    E:/ebook/ruby/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/rails-2.0.2/lib/commands/server.rb:39
+    E:/ebook/ruby/InstantRails-2.0-win/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    E:/ebook/ruby/InstantRails-2.0-win/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    script/server:3
+
+Rendering E:/ebook/ruby/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/templates/rescues/layout.erb (not_found)
+
+
+Processing TodoController#edit (for 127.0.0.1 at 2010-02-02 01:37:55) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlNWY3NmM1MDIyODUyNjFlMjg0NGUxNTIwZDNjMTlj%0AODQiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7AAY6CkB1c2VkewA%3D--abbe5bdcff4e39da26a5ae67436721e21a3d3e25
+  Parameters: {"action"=>"edit", "id"=>"9", "controller"=>"todo"}
+  [4;35;1mTask Columns (0.000000)[0m   [0mSHOW FIELDS FROM `tasks`[0m
+  [4;36;1mTask Load (0.000000)[0m   [0;1mSELECT * FROM `tasks` WHERE (`tasks`.`id` = 9) [0m
+Rendering todo/edit
+Completed in 0.04700 (21 reqs/sec) | Rendering: 0.01500 (31%) | DB: 0.00000 (0%) | 200 OK [http://localhost/todo/edit/9]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-02-02 01:37:55) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlNWY3NmM1MDIyODUyNjFlMjg0NGUxNTIwZDNjMTlj%0AODQiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7AAY6CkB1c2VkewA%3D--abbe5bdcff4e39da26a5ae67436721e21a3d3e25
+  Parameters: {}
+
+
+ActionController::RoutingError (No route matches "/stylesheets/body.jpg" with {:method=>:get}):
+    E:/ebook/ruby/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/routing.rb:1441:in `recognize_path'
+    E:/ebook/ruby/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/routing.rb:1424:in `recognize'
+    E:/ebook/ruby/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:170:in `handle_request'
+    E:/ebook/ruby/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:115:in `dispatch'
+    E:/ebook/ruby/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:126:in `dispatch_cgi'
+    E:/ebook/ruby/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:9:in `dispatch'
+    E:/ebook/ruby/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.2-x86-mswin32/bin/../lib/mongrel/rails.rb:76:in `process'
+    E:/ebook/ruby/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.2-x86-mswin32/bin/../lib/mongrel/rails.rb:74:in `synchronize'
+    E:/ebook/ruby/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.2-x86-mswin32/bin/../lib/mongrel/rails.rb:74:in `process'
+    E:/ebook/ruby/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.2-x86-mswin32/lib/mongrel.rb:159:in `process_client'
+    E:/ebook/ruby/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.2-x86-mswin32/lib/mongrel.rb:158:in `each'
+    E:/ebook/ruby/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.2-x86-mswin32/lib/mongrel.rb:158:in `process_client'
+    E:/ebook/ruby/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.2-x86-mswin32/lib/mongrel.rb:285:in `run'
+    E:/ebook/ruby/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.2-x86-mswin32/lib/mongrel.rb:285:in `initialize'
+    E:/ebook/ruby/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.2-x86-mswin32/lib/mongrel.rb:285:in `new'
+    E:/ebook/ruby/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.2-x86-mswin32/lib/mongrel.rb:285:in `run'
+    E:/ebook/ruby/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.2-x86-mswin32/lib/mongrel.rb:268:in `initialize'
+    E:/ebook/ruby/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.2-x86-mswin32/lib/mongrel.rb:268:in `new'
+    E:/ebook/ruby/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.2-x86-mswin32/lib/mongrel.rb:268:in `run'
+    E:/ebook/ruby/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.2-x86-mswin32/lib/mongrel/configurator.rb:282:in `run'
+    E:/ebook/ruby/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.2-x86-mswin32/lib/mongrel/configurator.rb:281:in `each'
+    E:/ebook/ruby/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.2-x86-mswin32/lib/mongrel/configurator.rb:281:in `run'
+    E:/ebook/ruby/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.2-x86-mswin32/bin/mongrel_rails:128:in `run'
+    E:/ebook/ruby/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.2-x86-mswin32/lib/mongrel/command.rb:212:in `run'
+    E:/ebook/ruby/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.2-x86-mswin32/bin/mongrel_rails:281
+    E:/ebook/ruby/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:489:in `load'
+    E:/ebook/ruby/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:489:in `load'
+    E:/ebook/ruby/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    E:/ebook/ruby/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:489:in `load'
+    E:/ebook/ruby/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/rails-2.0.2/lib/commands/servers/mongrel.rb:64
+    E:/ebook/ruby/InstantRails-2.0-win/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    E:/ebook/ruby/InstantRails-2.0-win/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    E:/ebook/ruby/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:496:in `require'
+    E:/ebook/ruby/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    E:/ebook/ruby/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:496:in `require'
+    E:/ebook/ruby/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/rails-2.0.2/lib/commands/server.rb:39
+    E:/ebook/ruby/InstantRails-2.0-win/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    E:/ebook/ruby/InstantRails-2.0-win/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    script/server:3
+
+Rendering E:/ebook/ruby/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/templates/rescues/layout.erb (not_found)

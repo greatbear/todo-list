@@ -28,9 +28,8 @@
  </div> 
 
    		</div>
-   		<div id="content"><h2>ToDo App</h2>
-<p>All current to do items.
-</p>	
+   		<div id="content"><h2>Edit item</h2>
+
 <% task=@task -%>		
 <form action="/todo/update" method="post" accept-charset="utf-8">
 	<input type="hidden" name="id" value="<%= task.id %>"/>
