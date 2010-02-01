@@ -31,36 +31,23 @@
    		<div id="content"><h2>ToDo App</h2>
 <p>All current to do items.
 </p>	
-			
-<table width="400" border="1">
-    <tr>
-        <th>No.
-        </th>
-        <th>Name
-        </th>
-        <th>Description
-        </th>
-		<th>Delete
-        </th>
-    </tr>
-	<% for task in @tasks -%>
-    <tr>
-        <td><%= task.id %>
-        </td>
-        <td><a href="/todo/edit/<%= task.id %>"><%= task.name %></a>
-        </td>
-        <td><%= task.description %>
-        </td>
-		<td>
-			<a href="/todo/delete/<%= task.id %>"><button type="button">Delete</button></a>
-        </td>
-    </tr>
-	<% end %>
-</table>
-<br /><br />
-<div align="bottom" ><a href="/todo/add">Add new item</a></div>
+<% task=@task -%>		
+<form action="/todo/update" method="post" accept-charset="utf-8">
+	<input type="hidden" name="id" value="<%= task.id %>"/>
+	<table width="400" border="0">
+	    <tr>
+	        <td>Name:</td><td><input name="name" type="text" value="<%= task.name %>" /></td>
+	    </tr>
+	    <tr>
+	        <td>Description: </td><td><input name="des" type="text" value="<%= task.description %>"/></td>
+	    </tr>
+	    <tr>
+	        <td><input type="submit" value="OK" /></td>
+	        <td><a href="/todo" value="Cancel" /><input type="button" value="Cancel" /></a></td>
+	    </tr>
+	</table>
 
-			
+</form>						
 		</div><!-- end content -->
 		</div><!-- end inner -->
 	</div><!-- end outer -->
