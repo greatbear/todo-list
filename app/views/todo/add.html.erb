@@ -28,14 +28,21 @@
  </div> 
 
 </div>
-<div id="content"><h2>ToDo App</h2>
-<p>Add new item.</p>	
-			
-
-<br /><br />
-<div align="bottom" ><button type="button">OK</button> <button type="button">Cancel</button></div>
-
-			
+<div id="content"><h2>Add new item</h2>
+<form action="/todo/addItem" method="post" accept-charset="utf-8">
+	<table width="400" border="0">
+	    <tr>
+	        <td>Name:</td><td><input name="name" type="text" /></td>
+	    </tr>
+	    <tr>
+	        <td>Description: </td><td><input name="des" type="text" /></td>
+	    </tr>
+	    <tr>
+	        <td><input type="submit" value="OK" /></td>
+	        <td><a href="/todo" value="Cancel" /><input type="button" value="Cancel" /></a></td>
+	    </tr>
+	</table>
+</form>
 		</div><!-- end content -->
 		</div><!-- end inner -->
 	</div><!-- end outer -->
